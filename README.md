@@ -1,4 +1,8 @@
-🚨 Be sure to update this file according to your team.
+# TEAM SPACE
+Team project was done during Sourcery Academy. The website has 3 main functions:
+- newsfeed – where the team can share photos, videos and celebrate birthdays
+- reservation pages – to easily find available devices, books and meeting rooms
+- eat-out pages – where people can find different places to go to eat
 
 ## Run the project
 
@@ -9,6 +13,13 @@
   - `npm install`
   - `npm run start-server` - runs server
   - `npm start` - builds project for development
+- .env - this website uses some environment variables. You will need to create a file .env and insert these variables (don't forget to restart server `npm start` after updating .env file):<br />
+  - To access the hosted database use this:<br />
+    `REACT_APP_DATABASE_URL = "https://sfe2020-status202.azurewebsites.net"`<br />
+    Also, it could be run in the local host:<br />
+    `REACT_APP_DATABASE_URL = "http://localhost:3008"`<br />
+  - To reach the interactive google maps, you will need to insert your google maps api key:<br />
+    `REACT_APP_GOOGLE_MAPS_API_KEY=""`
 
 ## Available Scripts
 
@@ -26,16 +37,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### .env
-
-The page uses some environment variables. You will need to create a file .env and insert these variables:
-To access the hosted database use this:
-REACT_APP_DATABASE_URL = "https://sfe2020-status202.azurewebsites.net"
-Also, it could be runned in the local host:
-REACT_APP_DATABASE_URL = "http://localhost:3008"
-To reach the interactive google maps, you will need to insert google maps api key:
-REACT_APP_GOOGLE_MAPS_API_KEY=""
-
 ### `npm build`
 
 Builds the app for production to the `build` folder.<br />
@@ -49,7 +50,3 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### `npm run lint`
 
 Runs all linters and prettier and shows any warnings/errors in console.
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
