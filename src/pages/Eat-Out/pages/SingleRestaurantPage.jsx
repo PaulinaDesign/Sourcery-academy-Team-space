@@ -45,7 +45,7 @@ const SingleRestaurantPage = (props) => {
 
     const fetchUserInfo = async () => {
       const data = await fetch(
-        `${process.env.REACT_APP_DATABASE_URL}/userData`
+        `${process.env.REACT_APP_DATABASE_URL}/currentUser`
       ).then((res) => res.json());
       setCurrentUser(`${data.firstName} ${data.lastName}`);
     };

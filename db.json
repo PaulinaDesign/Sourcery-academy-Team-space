@@ -1,26 +1,4 @@
 {
-  "instructions": [
-    {
-      "id": 1,
-      "instruction": "setup nvm"
-    },
-    {
-      "id": 2,
-      "instruction": "run 'nvm use' or just set the node version to the one in .nvmrc file"
-    },
-    {
-      "id": 3,
-      "instruction": "run 'npm install'"
-    },
-    {
-      "id": 5,
-      "instruction": "run 'npm run start-server'"
-    },
-    {
-      "id": 6,
-      "instruction": "run 'npm start'"
-    }
-  ],
   "loggedInUser": {},
   "userList": [
     {
@@ -30,9 +8,17 @@
       "pass": "status202",
       "rpass": "status202",
       "id": 1
+    },
+    {
+      "fname": "Queen ",
+      "lname": "Elizabeth",
+      "email": "royal@mail.com",
+      "pass": "status",
+      "rpass": "status",
+      "id": 2
     }
   ],
-  "userData": {
+  "currentUser": {
     "firstName": "Aubrey",
     "lastName": "Plaza",
     "userImage": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
@@ -110,7 +96,11 @@
         "Carl Rodriquez",
         "Derick Dinwiddie"
       ],
-      "categories": ["Burger", "Salads", "Grill"],
+      "categories": [
+        "Burger",
+        "Salads",
+        "Grill"
+      ],
       "coordinates": {
         "lat": 54.9394301,
         "lng": 23.8970008
@@ -153,7 +143,12 @@
         "Carl Rodriquez",
         "Derick Dinwiddie"
       ],
-      "categories": ["Salads", "Pizza", "Pancakes", "Soups"],
+      "categories": [
+        "Salads",
+        "Pizza",
+        "Pancakes",
+        "Soups"
+      ],
       "coordinates": {
         "lat": 54.8958139,
         "lng": 23.8951239
@@ -192,7 +187,9 @@
         "Edric Ingram",
         "Samuel Frost"
       ],
-      "categories": ["Pizza"],
+      "categories": [
+        "Pizza"
+      ],
       "coordinates": {
         "lat": 54.889633,
         "lng": 23.9257398
@@ -237,7 +234,11 @@
         "Carl Rodriquez",
         "Derick Dinwiddie"
       ],
-      "categories": ["Grill", "Sweets", "Brunch"],
+      "categories": [
+        "Grill",
+        "Sweets",
+        "Brunch"
+      ],
       "coordinates": {
         "lat": 54.8945471,
         "lng": 23.8976119
@@ -284,7 +285,11 @@
         "Samson Jensen",
         "Matt Hodges"
       ],
-      "categories": ["Salads", "Grill", "Soups"],
+      "categories": [
+        "Salads",
+        "Grill",
+        "Soups"
+      ],
       "coordinates": {
         "lat": 55.0953689,
         "lng": 23.778336
@@ -332,7 +337,12 @@
         "Ford Meskill",
         "Geoffrey Howe"
       ],
-      "categories": ["Salads", "Grill", "Brunch", "Soups"],
+      "categories": [
+        "Salads",
+        "Grill",
+        "Brunch",
+        "Soups"
+      ],
       "coordinates": {
         "lat": 54.8963451,
         "lng": 23.90935
@@ -356,9 +366,21 @@
         "score": 4.75,
         "userCount": 4
       },
-      "checkIns": ["Elvira Gill", "Hadden Barrett"],
-      "likes": ["Laura Palmer", "Dale Cooper", "Halsey Cress", "Aubrey Plaza"],
-      "categories": ["Salads", "Grill", "Pancakes"],
+      "checkIns": [
+        "Elvira Gill",
+        "Hadden Barrett"
+      ],
+      "likes": [
+        "Laura Palmer",
+        "Dale Cooper",
+        "Halsey Cress",
+        "Aubrey Plaza"
+      ],
+      "categories": [
+        "Salads",
+        "Grill",
+        "Pancakes"
+      ],
       "coordinates": {
         "lat": 54.896591,
         "lng": 23.8877029
@@ -410,7 +432,10 @@
         "Hadden Barrett",
         "Aubrey Plaza"
       ],
-      "categories": ["Salads", "Ramen"],
+      "categories": [
+        "Salads",
+        "Ramen"
+      ],
       "coordinates": {
         "lat": 54.89855189999999,
         "lng": 23.9083146
@@ -436,7 +461,10 @@
         "score": 4.333333333333333,
         "userCount": 3
       },
-      "categories": ["Burger", "Sandwich"],
+      "categories": [
+        "Burger",
+        "Sandwich"
+      ],
       "coordinates": {
         "lat": 54.89635200000001,
         "lng": 23.8929049
@@ -460,7 +488,10 @@
         "score": 3.6666666666666665,
         "userCount": 6
       },
-      "checkIns": ["Derek Daves", "Chase Oliver"],
+      "checkIns": [
+        "Derek Daves",
+        "Chase Oliver"
+      ],
       "likes": [
         "Pandora Burns",
         "Mabel Mckinney",
@@ -469,7 +500,11 @@
         "Carl Rodriquez",
         "Derick Dinwiddie"
       ],
-      "categories": ["Kebab", "Pizza", "Sweets"],
+      "categories": [
+        "Kebab",
+        "Pizza",
+        "Sweets"
+      ],
       "coordinates": {
         "lat": 54.9208659,
         "lng": 23.973538
@@ -511,7 +546,10 @@
         "Carl Rodriquez",
         "Derick Dinwiddie"
       ],
-      "categories": ["Sushi", "Soups"],
+      "categories": [
+        "Sushi",
+        "Soups"
+      ],
       "coordinates": {
         "lat": 54.8989747,
         "lng": 23.8908587
@@ -557,7 +595,11 @@
         "Carl Rodriquez",
         "Derick Dinwiddie"
       ],
-      "categories": ["Burger", "Brunch", "Pancakes"],
+      "categories": [
+        "Burger",
+        "Brunch",
+        "Pancakes"
+      ],
       "coordinates": {
         "lat": 54.9111184,
         "lng": 23.9400752
@@ -595,7 +637,9 @@
         "Carl Rodriquez",
         "Derick Dinwiddie"
       ],
-      "categories": ["Sweets"],
+      "categories": [
+        "Sweets"
+      ],
       "coordinates": {
         "lat": 54.8961249,
         "lng": 23.887516
@@ -640,7 +684,11 @@
         "Carl Rodriquez",
         "Derick Dinwiddie"
       ],
-      "categories": ["Kebab", "Ramen", "Burger"],
+      "categories": [
+        "Kebab",
+        "Ramen",
+        "Burger"
+      ],
       "coordinates": {
         "lat": 54.89635699999999,
         "lng": 23.8910129
@@ -664,7 +712,11 @@
         "score": 4,
         "userCount": 1
       },
-      "checkIns": ["Derek Daves", "Chase Oliver", "Samson Jensen"],
+      "checkIns": [
+        "Derek Daves",
+        "Chase Oliver",
+        "Samson Jensen"
+      ],
       "likes": [
         "Pandora Burns",
         "Mabel Mckinney",
@@ -673,7 +725,11 @@
         "Carl Rodriquez",
         "Derick Dinwiddie"
       ],
-      "categories": ["Salads", "Sandwich", "Kebab"],
+      "categories": [
+        "Salads",
+        "Sandwich",
+        "Kebab"
+      ],
       "coordinates": {
         "lat": 54.896408,
         "lng": 23.8913201
@@ -720,7 +776,11 @@
         "Carl Rodriquez",
         "Derick Dinwiddie"
       ],
-      "categories": ["Pizza", "Salads", "Sandwich"],
+      "categories": [
+        "Pizza",
+        "Salads",
+        "Sandwich"
+      ],
       "coordinates": {
         "lat": 54.8969921,
         "lng": 23.9195795
@@ -761,7 +821,11 @@
         "Carl Rodriquez",
         "Derick Dinwiddie"
       ],
-      "categories": ["Burger", "Grill", "Sweets"],
+      "categories": [
+        "Burger",
+        "Grill",
+        "Sweets"
+      ],
       "coordinates": {
         "lat": 54.898304,
         "lng": 23.9134065
@@ -785,7 +849,10 @@
         "score": 4.666666666666667,
         "userCount": 3
       },
-      "checkIns": ["Elvira Gill", "Hadden Barrett"],
+      "checkIns": [
+        "Elvira Gill",
+        "Hadden Barrett"
+      ],
       "likes": [
         "Pandora Burns",
         "Mabel Mckinney",
@@ -795,7 +862,11 @@
         "Derick Dinwiddie",
         "Aubrey Plaza"
       ],
-      "categories": ["Salads", "Sandwich", "Kebab"],
+      "categories": [
+        "Salads",
+        "Sandwich",
+        "Kebab"
+      ],
       "coordinates": {
         "lat": 54.897307,
         "lng": 23.8911648
@@ -819,7 +890,9 @@
         "score": 4.4,
         "userCount": 5
       },
-      "checkIns": ["Hadden Barrett"],
+      "checkIns": [
+        "Hadden Barrett"
+      ],
       "likes": [
         "Pandora Burns",
         "Mabel Mckinney",
@@ -828,7 +901,11 @@
         "Carl Rodriquez",
         "Derick Dinwiddie"
       ],
-      "categories": ["Sweets", "Pancakes", "Ramen"],
+      "categories": [
+        "Sweets",
+        "Pancakes",
+        "Ramen"
+      ],
       "coordinates": {
         "lat": 54.8961249,
         "lng": 23.887516
@@ -852,7 +929,10 @@
         "score": 4.333333333333333,
         "userCount": 3
       },
-      "checkIns": ["Elvira Gill", "Hadden Barrett"],
+      "checkIns": [
+        "Elvira Gill",
+        "Hadden Barrett"
+      ],
       "likes": [
         "Pandora Burns",
         "Mabel Mckinney",
@@ -861,7 +941,12 @@
         "Carl Rodriquez",
         "Derick Dinwiddie"
       ],
-      "categories": ["Grill", "Kebab", "Burger", "Sushi"],
+      "categories": [
+        "Grill",
+        "Kebab",
+        "Burger",
+        "Sushi"
+      ],
       "coordinates": {
         "lat": 54.8964029,
         "lng": 23.8933019
@@ -1855,7 +1940,13 @@
         "Mobile",
         "Tablet"
       ],
-      "os": ["MacOS", "iOS", "Android", "Windows", "Linux"],
+      "os": [
+        "MacOS",
+        "iOS",
+        "Android",
+        "Windows",
+        "Linux"
+      ],
       "brand": [
         "Apple",
         "Dell",
@@ -3389,7 +3480,11 @@
       "postLocation": "LDN",
       "postDate": "2020-12-08T10:27:00.000Z",
       "postImage": "https://i.ytimg.com/vi/U5rlLL7cOtw/maxresdefault.jpg",
-      "likes": ["Anna Akana", "Queen Elizabeth", "Bill Gates"],
+      "likes": [
+        "Anna Akana",
+        "Queen Elizabeth",
+        "Bill Gates"
+      ],
       "comments": [
         {
           "userName": "Aubrey Plaza",
@@ -3456,7 +3551,9 @@
       "postLocation": "KLP",
       "postDate": "2020-10-27T10:27:00.000Z",
       "postVideo": 2,
-      "likes": ["Aubrey Plaza"],
+      "likes": [
+        "Aubrey Plaza"
+      ],
       "comments": []
     },
     {
@@ -3543,7 +3640,11 @@
       "postLocation": "LA",
       "postDate": "2020-10-02T10:27:00.000Z",
       "postImage": "https://images.pexels.com/photos/1181316/pexels-photo-1181316.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "likes": ["Anna Akana", "Michael Stevens", "Aubrey Plaza"],
+      "likes": [
+        "Anna Akana",
+        "Michael Stevens",
+        "Aubrey Plaza"
+      ],
       "comments": [
         {
           "userName": "Uncle Roger",
@@ -3558,7 +3659,10 @@
       "userName": "James Gandolfini",
       "userImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgWLSLCPGOKT2Wy4aG7Q6onsov5mqHGvtZRQ&usqp=CAU",
       "birthdayDate": "1961-09-19",
-      "wishes": ["Anna Akana", "Aubrey Plaza"],
+      "wishes": [
+        "Anna Akana",
+        "Aubrey Plaza"
+      ],
       "comments": [
         {
           "userName": "Sara Lars",
@@ -3583,7 +3687,9 @@
       "userName": "Queen Elizabeth",
       "userImage": "https://i.ibb.co/sRSPMKV/Britain-s-Queen-Elizabeth-II-smiles-as-she-attends-an-event-at-Newbury-Racecourse-in-Newbury-England.jpg",
       "birthdayDate": "1926-04-21",
-      "wishes": ["Anna Akana"],
+      "wishes": [
+        "Anna Akana"
+      ],
       "comments": [
         {
           "userName": "Sara Lars",

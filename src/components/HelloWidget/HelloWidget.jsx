@@ -17,7 +17,7 @@ const HelloWidget = () => {
   }, []);
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_DATABASE_URL}/userData/`)
+    fetch(`${process.env.REACT_APP_DATABASE_URL}/currentUser`)
       .then((res) => res.json())
       .then((res) => {
         setData(res);

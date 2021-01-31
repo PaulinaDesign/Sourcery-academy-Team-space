@@ -34,6 +34,10 @@
         height: 9.6rem;
         overflow: hidden;
         width: 19.7rem;
+
+        :not(:first-child) {
+            border-top: 1px solid $color-gray-6;
+        }
     }
 
     &__item {

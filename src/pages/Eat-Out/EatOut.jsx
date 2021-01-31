@@ -18,7 +18,7 @@ function EatOut() {
 
   useEffect(() => {
     const fetchUserInfo = async () => {
-      await fetch(`${process.env.REACT_APP_DATABASE_URL}/userData`)
+      await fetch(`${process.env.REACT_APP_DATABASE_URL}/currentUser`)
         .then((res) => res.json())
         .then((res) => {
           setCurrentUser(`${res.firstName} ${res.lastName}`);

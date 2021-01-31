@@ -15,6 +15,7 @@ const RegistrationForm = () => {
     pass: "",
     rpass: "",
   };
+
   const InputNamesArray = [
     "First Name",
     "Last Name",
@@ -26,6 +27,7 @@ const RegistrationForm = () => {
   const [registrationState, setRegistrationState] = useState(emptyObject);
   const [errors, setErrors] = useState({});
   const [registrationSuccess, setRegistrationSuccess] = useState(false);
+  const [emailIsValid, setEmailIsValid] = useState(false);
 
   const resetForm = () => {
     setRegistrationState(emptyObject);
@@ -37,20 +39,23 @@ const RegistrationForm = () => {
       [e.target.name]: e.target.value,
     });
   };
-  //Validates the input data to match basic validation
+
   const validate = () => {
     let failed = "";
+
     if (!registrationState.fname || registrationState.fname.length < 2) {
       failed = { ...failed, fname: "Firstname is too short" };
     }
+
     if (!registrationState.lname || registrationState.lname.length < 2) {
       failed = { ...failed, lname: "Lastname is too short" };
     }
-    //REGEX for email checks for any text before @ sign, text after it, a dot and then any domain
+
     let emailTest = /\S+@\S+\.\S+/;
     if (!registrationState.email || !emailTest.test(registrationState.email)) {
       failed = { ...failed, email: "Invalid email address" };
     }
+
     if (registrationState.pass !== registrationState.rpass) {
       failed = {
         ...failed,
@@ -58,9 +63,32 @@ const RegistrationForm = () => {
         rpass: "Password does not match",
       };
     }
-    setErrors(failed);
-    if (failed === "") {
-      return true;
+
+    if (!registrationState.pass || registrationState.pass.length < 5) {
+      failed = { ...failed, pass: "Password is too short" };
+    }
+
+    if (registrationState.email && emailTest.test(registrationState.email)) {
+      const checkEmail = async () => {
+        const data = await fetch(
+          `${process.env.REACT_APP_DATABASE_URL}/userList?email=${registrationState.email}`
+        ).then((res) => res.json());
+
+        if (data.length === 0) {
+          setEmailIsValid(true);
+          setErrors(failed);
+          return true;
+        } else {
+          failed = { ...failed, email: "Email already exists" };
+          setErrors(failed);
+          setEmailIsValid(false);
+          return false;
+        }
+      };
+      return checkEmail() && emailIsValid && failed === "";
+    } else {
+      setErrors(failed);
+      return false;
     }
   };
 
